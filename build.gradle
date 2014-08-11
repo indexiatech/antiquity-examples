@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group "com.github.indexiatech.antiquity.examples"
+version "1.0.0-SNAPSHOT"
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+    compile 'com.indexiatech:antiquity:0.4-SNAPSHOT'
+    compile 'org.neo4j:neo4j-kernel:2.0.1'
+}
